@@ -8,6 +8,8 @@ I also hold a degree in Public Policy and International Affairs from University 
 
 * [Microcontroller source code for UROS class project](https://github.com/jrmoserbaltimore/uros2023-firmware), written in RobotC for a Vex Cortex module.  Implements tank controls with mode locking in moving (forward, backward), turning, and precision mode (each stick controls individual treads).  Code is relatively simple, and commented clearly.  Robot built by a team of four engineering students:  one computer engineer, three mechanical engineers.
 
+* Work in progress [enhanced AY-3-8930 implementation](https://github.com/jrmoserbaltimore/harday), documentation in LaTeX, code to be produced in Amaranth HDL.  Implements an AY-3-8930, with an enhanced mode that adds several features for cheap, aiming for something viable during the original chip's original production run.  The original chip ran with a high sample rate to avoid aliasing issues, and could implement the triangle wave feature using a trivial integrator, while also avoiding the polynomial waveform generator and differencing approach; the remainder is a small amount of hardware.
+
 ## Skills and Competencies
 
 * **Programming Languages**:  Python, MicroPyhton, C#, bash, Verilog, Amaranth HDL, SQL
