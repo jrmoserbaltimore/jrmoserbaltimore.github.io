@@ -8,7 +8,11 @@ I also hold a degree in Public Policy and International Affairs from University 
 
 * [Microcontroller source code for UROS class project](https://github.com/jrmoserbaltimore/uros2023-firmware), written in RobotC for a Vex Cortex module.  Implements tank controls with mode locking in moving (forward, backward), turning, and precision mode (each stick controls individual treads).  Code is relatively simple, and commented clearly.  Robot built by a team of four engineering students:  one computer engineer, three mechanical engineers.
 
-* Work in progress [enhanced AY-3-8930 implementation](https://github.com/jrmoserbaltimore/harday), documentation in LaTeX, code to be produced in Amaranth HDL.  Implements an AY-3-8930, with an enhanced mode that adds several features for cheap, aiming for something viable during the original chip's original production run.  The original chip ran with a high sample rate to avoid aliasing issues, and could implement the triangle wave feature using a trivial integrator, while also avoiding the polynomial waveform generator and differencing approach; the remainder is a small amount of hardware.
+* Work in progress [enhanced AY-3-8930 implementation](https://github.com/jrmoserbaltimore/harday), documentation in LaTeX, code to be produced in Amaranth HDL.  Implements an AY-3-8930, with an enhanced mode that adds several features for cheap, aiming for something viable during the original chip's original production run.  The original chip ran with a high sample rate to avoid aliasing issues; the HardAY implementation uses 96kHz sample rate and mipmapped sawtooth waveforms to produce band-limited sawtooth and pulse width.  A final lowpass filter removes frequencies above 20kHz to eliminate aliasing when decimated to 48kHz sample rate.
+
+### Future Projects
+
+* Expand AY-3-8930 implementation into a YM2608 (OPNA) and design a board for pin and electrical compatibility with the AY-3-8910.  Final result should be a drop-in replacement for an MSX AY-3-8930 sound chip.
 
 ## Skills and Competencies
 
